@@ -1,0 +1,14 @@
+node_modules/
+dist/
+dist-crm/
+.local-crm/
+.env
+.env.*
+*.sqlite
+*.sqlite-*
+*.db
+*.log
+*.local
+*.local.*
+.DS_Store
+Thumbs.db
