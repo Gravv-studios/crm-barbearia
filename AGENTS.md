@@ -20,10 +20,11 @@
 ## Execução e publicação
 - npm run dev inicia exclusivamente em http://127.0.0.1:3001/.
 - Banco SQLite: .local-crm/studio-clean.sqlite. Não apagar nem substituir dados existentes.
-- O CRM continua local até o usuário informar o domínio e autorizar sua hospedagem independente.
+- O usuário autorizou a publicação: CRM online privado em https://studio-clean-crm.v-balyd.chatgpt.site. Fonte online na branch codex/online, checkout independente em online/. Main mantém a versão local. Para atualizar o online, seguir online/AGENTS.md e publicar no mesmo projeto Sites appgprj_6abd85ef2dd881919294368963d4d2da. Nunca misturar o Git aninhado no commit de main.
 - Push no GitHub é salvamento de código, não publicação operacional.
 - Não conectar este CRM ao projeto Vercel do site nem ao domínio atual do site.
 - Antes de exposição online: servidor de produção, persistência, autenticação, permissões, backup e HTTPS.
 - Integrações Trinks, Google e WhatsApp ainda não estão ativas; não simular conexão real.
 
 - Pedido explícito do usuário: commit e envio ao concluir cada atualização do agente, nunca por intervalo de 10 minutos, a cada salvamento ou por monitoramento em segundo plano.
+

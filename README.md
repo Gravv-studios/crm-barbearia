@@ -47,12 +47,15 @@ A API roda no servidor local do Vite e usa SQLite. Acesso vinculado a localhost/
 
 Preços e regras iniciais são exemplos autorizados pelo usuário e precisam ser conferidos pela loja. Horários usam o fuso local do computador. Caixa registra operações internamente, sem movimentar bancos. Receita não equivale a lucro; não há emissão fiscal. Uma comanda usa um profissional e uma forma de pagamento. O CRM local novo não importa automaticamente os testes do antigo localStorage.
 
-### Próxima publicação em domínio próprio
+### CRM online privado
 
-Aguardar o domínio informado pelo usuário. O CRM não foi publicado. Para operação multiusuário online, implantar servidor de produção, banco persistente, autenticação, perfis de acesso, rotina de backup e HTTPS no projeto próprio. A API deste estágio é middleware do servidor local, não um backend para hospedagem estática.
+Publicado em https://studio-clean-crm.v-balyd.chatgpt.site, com acesso privado pela conta ChatGPT proprietária. Banco D1 persistente separado do SQLite local, HTTPS, autenticação nas páginas e APIs e exportação manual de backup. Inicializa com exemplos editáveis; dados locais não foram transferidos. Integrações externas continuam pendentes. Não há acesso multiusuário da equipe configurado.
+
+O código da versão online está na branch codex/online deste mesmo repositório, com checkout independente na subpasta online (ignorada pela branch main). Para outro computador, clone a branch codex/online em uma pasta separada. Alterações online devem ser feitas nesse checkout, validadas, commitadas em português, enviadas com git push github HEAD:codex/online e publicadas no mesmo projeto Sites appgprj_6abd85ef2dd881919294368963d4d2da seguindo AGENTS.md dessa branch. A branch main mantém a versão local. Push no GitHub não publica automaticamente o CRM online.
 
 Trinks, Google e WhatsApp automático dependem de acessos autorizados, definição de provedor e implementação/testes de sincronização. Referência Trinks: https://trinks.readme.io/reference/introducao.
 
 ## Frequência da sincronização
 
 A cada atualização concluída pelo agente, executar a validação e o comando de sincronização. Não há tarefa de 10 em 10 minutos, cron, monitoramento de arquivos ou commit a cada salvamento. Edições manuais são enviadas quando você executa npm run sync com a descrição.
+
