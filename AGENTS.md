@@ -1,7 +1,7 @@
 # CRM Studio Clean — instruções do projeto
 
 ## Repositório e escopo
-- Este é o projeto independente do CRM: https://github.com/Gravv-studios/crm-studio-clean.git.
+- Este é o projeto independente do CRM: https://github.com/Gravv-studios/crm-barbearia.git.
 - Pasta local: C:/Users/Marcos/Documents/workspace02/crm-studio-clean.
 - Alterações do CRM devem ser feitas aqui, nunca na pasta studio-clean.
 - O site continua em https://clean-studio-blue.vercel.app/ e no repositório clean-studio.git.
@@ -25,3 +25,5 @@
 - Não conectar este CRM ao projeto Vercel do site nem ao domínio atual do site.
 - Antes de exposição online: servidor de produção, persistência, autenticação, permissões, backup e HTTPS.
 - Integrações Trinks, Google e WhatsApp ainda não estão ativas; não simular conexão real.
+
+- Pedido explícito do usuário: commit e envio ao concluir cada atualização do agente, nunca por intervalo de 10 minutos, a cada salvamento ou por monitoramento em segundo plano.

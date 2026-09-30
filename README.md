@@ -2,7 +2,7 @@
 
 Sistema de gestão independente da barbearia: agenda, clientes, comandas, caixa, equipe, comissões, estoque e relatórios. Identidade visual alinhada ao site.
 
-Repositório: https://github.com/Gravv-studios/crm-studio-clean.git
+Repositório: https://github.com/Gravv-studios/crm-barbearia.git
 
 O site institucional permanece em https://clean-studio-blue.vercel.app/ e no repositório https://github.com/Gravv-studios/clean-studio.git. Este repositório contém somente o CRM e seus recursos necessários.
 
@@ -52,3 +52,7 @@ Preços e regras iniciais são exemplos autorizados pelo usuário e precisam ser
 Aguardar o domínio informado pelo usuário. O CRM não foi publicado. Para operação multiusuário online, implantar servidor de produção, banco persistente, autenticação, perfis de acesso, rotina de backup e HTTPS no projeto próprio. A API deste estágio é middleware do servidor local, não um backend para hospedagem estática.
 
 Trinks, Google e WhatsApp automático dependem de acessos autorizados, definição de provedor e implementação/testes de sincronização. Referência Trinks: https://trinks.readme.io/reference/introducao.
+
+## Frequência da sincronização
+
+A cada atualização concluída pelo agente, executar a validação e o comando de sincronização. Não há tarefa de 10 em 10 minutos, cron, monitoramento de arquivos ou commit a cada salvamento. Edições manuais são enviadas quando você executa npm run sync com a descrição.
